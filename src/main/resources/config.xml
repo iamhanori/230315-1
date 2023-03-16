@@ -9,6 +9,6 @@
 	                    http://www.springframework.org/schema/context/spring-context-5.0.2.xsd
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
-    <bean id="bean" class="kr.hs.study.beans.TestBean1"/>
+<bean id="bean" class="kr.hs.study.beans.TestBean1" lazy-init="true" init-method="init_method" destroy-method="destroy_method"/>
 
 </beans>

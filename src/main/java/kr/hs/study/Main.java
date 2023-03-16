@@ -8,11 +8,7 @@ public class Main {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
 
         TestBean1 bean = ctx.getBean("bean", TestBean1.class);
-        // 주소
         System.out.println(bean);
-        // 메서드
-        bean.init_method();
-        bean.destroy_method();
 
         ctx.close();
 
